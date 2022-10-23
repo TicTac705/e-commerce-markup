@@ -1,0 +1,59 @@
+@import "mixins/media-mixin";
+@import "utils";
+@import "icons";
+@import "main-menu";
+@import "personal";
+
+.general-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  height: 100vh;
+  background-color: var(--container-bg-color);
+}
+
+.general-header {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.general-header__common {
+  display: flex;
+
+  @include mobile {
+    gap: 20px;
+  }
+
+  @include desktop {
+    gap: 32px;
+  }
+}
+
+.mobile-main-menu {
+  font-size: 20px;
+}
+
+.brand {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.content {
+  margin-top: 16px;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #979797;
+  --container-bg-color: #E5E5E5;
+  --border-color: #000;
+}
+

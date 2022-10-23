@@ -1,0 +1,25 @@
+.personal {
+  display: flex;
+  gap: 20px;
+  font-size: 17px;
+
+  &__cart {
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--primary-color);
+
+    &:hover, &:focus {
+      color: var(--secondary-color);
+    }
+  }
+
+  &__action {
+    text-decoration: none;
+    color: var(--primary-color);
+
+    &:hover, &:focus {
+      color: var(--secondary-color);
+    }
+  }
+}

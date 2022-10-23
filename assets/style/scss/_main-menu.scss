@@ -1,0 +1,19 @@
+.main-menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 17px;
+  gap: 32px;
+
+  &__link {
+    text-decoration: none;
+    color: var(--primary-color);
+
+    &:hover, &:focus {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+

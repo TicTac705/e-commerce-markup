@@ -1,0 +1,34 @@
+@import "mixins/media-mixin";
+
+.container {
+  max-width: 1124px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transition-none {
+  transition: none;
+}
+
+@include mobile {
+  .d-none-md {
+    display: none !important;
+  }
+}
+
+@include desktop {
+  .d-none-lg {
+    display: none !important;
+  }
+}
