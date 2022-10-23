@@ -1,0 +1,28 @@
+.general {
+  &-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+    height: 100vh;
+    background-color: var(--container-bg-color);
+  }
+
+  &-header {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--header-bg-color);
+
+    &__common {
+      display: flex;
+
+      @include mobile {
+        gap: 20px;
+      }
+
+      @include desktop {
+        gap: 32px;
+      }
+    }
+  }
+}

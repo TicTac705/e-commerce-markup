@@ -1,0 +1,32 @@
+.page-ingo {
+  color: var(--primary-color);
+  background-color: var(--header-bg-color);
+
+  @include mobile {
+    padding: 20px 0;
+  }
+
+  @include desktop {
+    padding: 32px 0 30px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__header{
+    margin: 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 45%;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
