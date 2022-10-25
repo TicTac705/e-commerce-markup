@@ -1,7 +1,11 @@
-%semi-bold {
+@mixin bold {
   font-weight: 600;
 }
 
-%regular {
+@mixin semi-bold {
+  font-weight: 600;
+}
+
+@mixin regular {
   font-weight: 400;
 }

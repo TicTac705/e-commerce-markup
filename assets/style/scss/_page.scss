@@ -18,9 +18,14 @@
 
   &__header{
     margin: 0;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
+
+    @include mobile {
+      @include h-4;
+    }
+
+    @include desktop {
+      @include h-3;
+    }
   }
 
   &__description {

@@ -1,17 +1,17 @@
-%button-large {
-  @extend %semi-bold;
+@mixin button-large {
+  @include semi-bold;
   font-size: 20px;
   line-height: 28px;
 }
 
-%button-big {
-  @extend %semi-bold;
+@mixin button-big {
+  @include semi-bold;
   font-size: 18px;
   line-height: 22px;
 }
 
-%button-small {
-  @extend %semi-bold;
+@mixin button-small {
+  @include semi-bold;
   font-size: 16px;
   line-height: 20px;
 }

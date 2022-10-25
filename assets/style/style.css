@@ -115,7 +115,7 @@
 
 .brand {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   text-decoration: none;
   color: var(--primary-color);
@@ -125,6 +125,7 @@
 }
 
 .mobile-main-menu {
+  font-weight: 600;
   font-size: 20px;
   color: var(--primary-color);
 }
@@ -179,9 +180,20 @@
 }
 .page-info__header {
   margin: 0;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
+}
+@media screen and (max-width: 767px) {
+  .page-info__header {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-info__header {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 .page-info__description {
   margin: 0;

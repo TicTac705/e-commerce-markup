@@ -1,23 +1,23 @@
-%p-1 {
-  @extend %regular;
+@mixin p-1 {
+  @include regular;
   font-size: 72px;
   line-height: 80px;
 }
 
-%p-2 {
-  @extend %regular;
+@mixin p-2 {
+  @include regular;
   font-size: 56px;
   line-height: 62px;
 }
 
-%p-3 {
-  @extend %regular;
+@mixin p-3 {
+  @include regular;
   font-size: 36px;
   line-height: 42px;
 }
 
-%p-4 {
-  @extend %regular;
+@mixin p-4 {
+  @include regular;
   font-size: 22px;
   line-height: 30px;
 }
