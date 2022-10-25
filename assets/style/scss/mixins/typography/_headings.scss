@@ -1,0 +1,29 @@
+%h-1 {
+  @extend %semi-bold;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+%h-2 {
+  @extend %semi-bold;
+  font-size: 56px;
+  line-height: 62px;
+}
+
+%h-3 {
+  @extend %semi-bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+%h-4 {
+  @extend %semi-bold;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+%h-5 {
+  @extend %semi-bold;
+  font-size: 16px;
+  line-height: 22px;
+}

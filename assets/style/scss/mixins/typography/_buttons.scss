@@ -1,0 +1,17 @@
+%button-large {
+  @extend %semi-bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+%button-big {
+  @extend %semi-bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+%button-small {
+  @extend %semi-bold;
+  font-size: 16px;
+  line-height: 20px;
+}

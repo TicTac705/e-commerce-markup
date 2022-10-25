@@ -1,4 +1,9 @@
 @import "mixins/media-mixin";
+@import "mixins/typography/weight-fonts";
+@import "mixins/typography/headings";
+@import "mixins/typography/paragraphs";
+@import "mixins/typography/buttons";
+
 @import "utils";
 @import "icons";
 @import "main-menu";
