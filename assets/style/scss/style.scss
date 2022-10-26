@@ -12,6 +12,9 @@
 @import "mobile-main-menu";
 @import "general";
 @import "page";
+@import "catalog";
+@import "buttons";
+@import "product";
 
 .content {
   padding-top: 16px;
@@ -24,6 +27,12 @@
   --header-bg-color: #E5E5E5;
   --main-menu-bg-color: #E5E5E5;
   --border-color: #000;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --catalog-category-border-color: #000;
+  --catalog-category-hover-border-color: #979797;
 }
 
 .general-header--dark, .page-info--dark {
