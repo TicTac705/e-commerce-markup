@@ -1,5 +1,6 @@
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -9,9 +10,12 @@
   &__link {
     text-decoration: none;
     color: var(--primary-color);
+    border-bottom: 1px solid var(--main-menu-bg-color);
 
     &:hover, &:focus {
       color: var(--secondary-color);
+      border-bottom: 1px solid var(--secondary-color);
+      transition: border-bottom 0.3s linear;
     }
   }
 }

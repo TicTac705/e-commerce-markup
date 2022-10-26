@@ -3,7 +3,7 @@
   background-color: var(--header-bg-color);
 
   @include mobile {
-    padding: 20px 0;
+    padding: 8px 0;
   }
 
   @include desktop {
@@ -20,7 +20,7 @@
     margin: 0;
 
     @include mobile {
-      @include h-4;
+      @include h-5;
     }
 
     @include desktop {

@@ -14,7 +14,7 @@
 @import "page";
 
 .content {
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 :root {
@@ -22,6 +22,7 @@
   --secondary-color: #979797;
   --container-bg-color: #E5E5E5;
   --header-bg-color: #E5E5E5;
+  --main-menu-bg-color: #E5E5E5;
   --border-color: #000;
 }
 
@@ -30,6 +31,7 @@
   --secondary-color: #979797;
   --container-bg-color: #E5E5E5;
   --header-bg-color: #0D0D0D;
+  --main-menu-bg-color: #0D0D0D;
   --border-color: #fff;
 }
 
