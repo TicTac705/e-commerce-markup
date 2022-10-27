@@ -1,8 +1,53 @@
+@mixin font-size-card {
+  font-size: 17px;
+}
+
 .products__list {
+  padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  border: 1px solid var(--secondary-color);
 
+  &__link {
+    text-decoration: none;
+  }
+
+  &__img {
+    width: 264px;
+    height: 264px;
+
+    .product-img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    @include bold;
+    @include font-size-card;
+    padding: 4px;
+    text-align: center;
+  }
+
+  &__footer {
+    @include font-size-card;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+  }
 }

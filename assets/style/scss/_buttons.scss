@@ -2,6 +2,9 @@
   text-decoration: none;
   display: block;
   padding: 4px 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   color: var(--primary-color);
   @include button-small;
 }
@@ -23,9 +26,9 @@
     color: var(--color-white);
     background-color: var(--color-black);
 
-    &:hover, &:focus {
+    &:hover {
       color: var(--color-black);
-      background-color: var(--color-white);
+      background-color: var(--color-gray);
       transition: background-color 0.2s linear;
     }
   }
@@ -34,7 +37,7 @@
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 
-    &:hover, &:focus {
+    &:hover {
       color: var(--secondary-color);
       border: 1px solid var(--secondary-color);
       transition: border 0.2s linear;

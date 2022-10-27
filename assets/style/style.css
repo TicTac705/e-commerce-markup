@@ -119,7 +119,7 @@
 
 .brand {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   text-decoration: none;
   color: var(--primary-color);
@@ -129,7 +129,7 @@
 }
 
 .mobile-main-menu {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   color: var(--primary-color);
 }
@@ -279,6 +279,9 @@
   text-decoration: none;
   display: block;
   padding: 4px 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   color: var(--primary-color);
   font-weight: 600;
   font-size: 16px;
@@ -304,24 +307,63 @@
   color: var(--color-white);
   background-color: var(--color-black);
 }
-.btn--primary:hover, .btn--primary:focus {
+.btn--primary:hover {
   color: var(--color-black);
-  background-color: var(--color-white);
+  background-color: var(--color-gray);
   transition: background-color 0.2s linear;
 }
 .btn--secondary {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
-.btn--secondary:hover, .btn--secondary:focus {
+.btn--secondary:hover {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   transition: border 0.2s linear;
 }
 
 .products__list {
+  padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  box-sizing: border-box;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  border: 1px solid var(--secondary-color);
+}
+.product-card__link {
+  text-decoration: none;
+}
+.product-card__img {
+  width: 264px;
+  height: 264px;
+}
+.product-card__img .product-img {
+  display: block;
+  width: 100%;
+}
+.product-card__title {
+  font-weight: 700;
+  font-size: 17px;
+  padding: 4px;
+  text-align: center;
+}
+.product-card__footer {
+  font-size: 17px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.product-card:hover {
+  border: 1px solid var(--primary-color);
 }
 
 .content {
@@ -336,6 +378,7 @@
   --main-menu-bg-color: #E5E5E5;
   --border-color: #000;
   --color-white: #fff;
+  --color-gray: #979797;
   --color-black: #000;
   --catalog-category-border-color: #000;
   --catalog-category-hover-border-color: #979797;

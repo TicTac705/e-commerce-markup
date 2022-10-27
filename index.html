@@ -97,10 +97,10 @@
         <div class="catalog__products">
             <div class="products__control">
                 <div class="control__action">
-                    <a href="#" class="btn btn--primary">Категории</a>
+                    <a href="#" class="btn btn--primary d-none-lg">Категории</a>
                 </div>
                 <div class="control__sorting">
-                    <!-- Пока не разобрался как правильно стилизовать select -->
+                    <!-- Пока не разобрался как правильно стилизовать select и стоит ли в этом случае его вообще использовать -->
                     <select>
                         <option>sort 1</option>
                         <option>sort 2</option>
@@ -110,14 +110,78 @@
             <div class="products__list">
                 <div class="product-card">
                     <div class="product-card__img">
-                        <img src="assets/img/catalog-1.jpg" alt="Название товара" class="product-img">
+                        <a href="#" class="product-card__link">
+                            <img src="assets/img/catalog-1.jpg" alt="Название товара" class="product-img">
+                        </a>
                     </div>
-                    <div class="product-card__title">Товар с длинным названием</div>
+                    <div class="product-card__title">Товар с длинным названием 1</div>
                     <div class="product-card__footer">
                         <div class="product-card__price">₽ 24999</div>
+                        <button class="btn btn--small btn--primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <a href="#" class="product-card__link">
+                            <img src="assets/img/catalog-2.jpg" alt="Название товара" class="product-img">
+                        </a>
+                    </div>
+                    <div class="product-card__title">Товар 2</div>
+                    <div class="product-card__footer">
+                        <div class="product-card__price">₽ 24999</div>
+                        <button class="btn btn--small btn--primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <a href="#" class="product-card__link">
+                            <img src="assets/img/catalog-3.jpg" alt="Название товара" class="product-img">
+                        </a>
+                    </div>
+                    <div class="product-card__title">Товар 3</div>
+                    <div class="product-card__footer">
+                        <div class="product-card__price">₽ 24999</div>
+                        <button class="btn btn--small btn--primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <a href="#" class="product-card__link">
+                            <img src="assets/img/catalog-4.jpg" alt="Название товара" class="product-img">
+                        </a>
+                    </div>
+                    <div class="product-card__title">Товар 4</div>
+                    <div class="product-card__footer">
+                        <div class="product-card__price">₽ 24999</div>
+                        <button class="btn btn--small btn--primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <a href="#" class="product-card__link">
+                            <img src="assets/img/catalog-5.jpg" alt="Название товара" class="product-img">
+                        </a>
+                    </div>
+                    <div class="product-card__title">Товар 5</div>
+                    <div class="product-card__footer">
+                        <div class="product-card__price">₽ 24999</div>
+                        <button class="btn btn--small btn--primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__img">
+                        <a href="#" class="product-card__link">
+                            <img src="assets/img/catalog-1.jpg" alt="Название товара" class="product-img">
+                        </a>
+                    </div>
+                    <div class="product-card__title">Товар с более длинным названием 2</div>
+                    <div class="product-card__footer">
+                        <div class="product-card__price">₽ 24999</div>
+                        <button class="btn btn--small btn--primary">В корзину</button>
                     </div>
                 </div>
             </div>
+            <div class="pagination"></div>
         </div>
     </div>
 </main>
