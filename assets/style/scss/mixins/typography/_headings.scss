@@ -1,3 +1,4 @@
+//вот это хорошо, да
 @mixin h-1 {
   @include semi-bold;
   font-size: 72px;
@@ -27,3 +28,5 @@
   font-size: 16px;
   line-height: 22px;
 }
+
+//h-6 тихо скулит в углу что его забыли :(

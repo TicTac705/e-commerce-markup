@@ -1,5 +1,5 @@
 .general {
-  &-body {
+  &-body { // лучше всё таки не инкапсулировать НЕ элементы блока, вообще для блоков создают отдельные файлы в идеале
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     line-height: 20px;

@@ -16,6 +16,7 @@
 @import "buttons";
 @import "product";
 
+//этот блок здесь лишний, не надо делать свалку в общем файле
 .content {
   padding-top: 16px;
 }
@@ -36,6 +37,7 @@
   --catalog-category-hover-border-color: #979797;
 }
 
+//лучше задать theme-inverse один класс и его применять к нужным тебе блокам
 .general-header--dark, .page-info--dark {
   --primary-color: #fff;
   --secondary-color: #979797;
