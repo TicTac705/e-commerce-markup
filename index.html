@@ -18,6 +18,10 @@
 </head>
 <body class="general-body">
 <header class="general-header general-header--dark">
+<!--    идея таких утилитных классов плохо подходит для паблик проектов, такое норм в админке,-->
+<!--    потому что по сути теряется контекст стилизации, вёрстка через html классы не очень хорошо-->
+<!--    скалируется и происходит дублирование одних и тех же классов. Гораздо лучше-->
+<!--    было бы иметь эти же стили в general-header__content сейчас, а контейнер можно оформить миксином-->
     <nav class="container d-flex">
         <div class="general-header__common common">
             <div class="common__mobile-main-menu mobile-main-menu d-none-lg">

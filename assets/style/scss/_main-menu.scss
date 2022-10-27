@@ -1,6 +1,7 @@
 .main-menu {
+  // я бы вынес отдельно блок .menu отсюда т.к. для ul приходится всегда одно и то же затирать
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; // зачем?
   padding: 0;
   margin: 0;
   list-style: none;
@@ -12,6 +13,7 @@
     color: var(--primary-color);
     border-bottom: 1px solid var(--main-menu-bg-color);
 
+    //красиво сделал, только :focus как по мне лишнее, корректнее --active сделать
     &:hover, &:focus {
       color: var(--secondary-color);
       border-bottom: 1px solid var(--secondary-color);

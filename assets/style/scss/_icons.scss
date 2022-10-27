@@ -1,5 +1,8 @@
 @import "fonts/font-icons";
 
+//не понял профита в собственном файле для работы с icomoon, отчего весь css из icomoon не подключается здесь?
+//кроме того, гораздо лучше на уровне icomoon определять весь размер иконочного шрифта, чем делать
+//это руками самому
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
