@@ -1,0 +1,13 @@
+.common {
+    &__main-menu {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__mobile-main-menu {
+        @include desktop {
+            display: none;
+        }
+    }
+}

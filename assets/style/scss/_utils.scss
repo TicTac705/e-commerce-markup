@@ -4,31 +4,15 @@
 //.container лучше был бы миксином
 //.d-flex и .d-flex-sb гораздо лучше смотрятся внутри соответствуюших css блоков
 //медиа display:none также, ты теряешь контекст в тех местах где следовало писать такие стили
-.container {
-  max-width: 1124px;
-  min-width: 360px;
-  margin: 0 auto;
-  padding: 0 5px;
-  box-sizing: border-box;
-}
 
-.d-flex {
-  display: flex;
-}
+// @include mobile {
+//   .d-none-md {
+//     display: none !important;
+//   }
+// }
 
-.d-flex-sb {
-  display: flex;
-  justify-content: space-between;
-}
-
-@include mobile {
-  .d-none-md {
-    display: none !important;
-  }
-}
-
-@include desktop {
-  .d-none-lg {
-    display: none !important;
-  }
-}
+// @include desktop {
+//   .d-none-lg {
+//     display: none !important;
+//   }
+// }

@@ -3,6 +3,12 @@
   gap: 12px;
   width: 100%; // это лишнее, флексы уже на всю ширину
   box-sizing: border-box;
+
+  &__categories {
+    @include mobile {
+      display: none !important;
+    }
+  }
 }
 
 .categories {
@@ -15,8 +21,7 @@
     margin: 0;
   }
 
-  &__category-list {
-  }
+  &__category-list {}
 }
 
 //это отдельный файл, сейчас файл и так уже немаленький, любой блок в отдельном файле
@@ -30,8 +35,7 @@
   font-size: 17px; // ты создал много миксинов, но всё равно продолжаешь делать новые размеры шрифтов по проекту, сделай поиск по font-size в проекте, их много, а должно быть по минимуму
   gap: 4px;
 
-  &__item {
-  }
+  &__item {}
 
   &__link {
     text-decoration: none;
@@ -55,7 +59,8 @@
       margin-left: auto;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: var(--secondary-color);
       border: 1px solid var(--catalog-category-hover-border-color);
 
@@ -73,7 +78,7 @@
 }
 
 // отдельный блок, который называется .controls или .actions-row или ещё как
-.products__control{
+.products__control {
   display: flex;
   align-items: center;
 

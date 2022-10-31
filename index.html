@@ -17,18 +17,18 @@
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body class="general-body">
-<header class="general-header general-header--dark">
+<header class="general-header theme-inverse">
 <!--    идея таких утилитных классов плохо подходит для паблик проектов, такое норм в админке,-->
 <!--    потому что по сути теряется контекст стилизации, вёрстка через html классы не очень хорошо-->
 <!--    скалируется и происходит дублирование одних и тех же классов. Гораздо лучше-->
 <!--    было бы иметь эти же стили в general-header__content сейчас, а контейнер можно оформить миксином-->
-    <nav class="container d-flex">
+    <nav class="general-header__container">
         <div class="general-header__common common">
-            <div class="common__mobile-main-menu mobile-main-menu d-none-lg">
+            <div class="common__mobile-main-menu mobile-main-menu">
                 <i class="icon-bars"></i>
             </div>
             <a href="#" class="common__brand brand">E-Commerce</a>
-            <ul class="common__main-menu main-menu d-none-md">
+            <ul class="common__main-menu main-menu">
                 <li class="main-menu__item">
                     <a href="#" class="main-menu__link">Каталог</a>
                 </li>
@@ -46,18 +46,18 @@
         </div>
     </nav>
 </header>
-<div class="page-info page-info--dark">
-    <div class="container">
+<div class="page-info theme-inverse">
+    <div class="page-info__container">
         <div class="page-info__wrapper">
             <h1 class="page-info__header">Каталог</h1>
-            <p class="page-info__description d-none-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+            <p class="page-info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
                 earum error fugit possimus totam? Aut delectus ipsum labore numquam sint.</p>
         </div>
     </div>
 </div>
-<main class="container content">
+<main class="content content__container">
     <div class="content__catalog catalog">
-        <div class="catalog__categories categories d-none-md">
+        <div class="categories catalog__categories">
             <h4 class="categories__header">Категории</h4>
             <ul class="categories__category-list category-list">
                 <li class="category-list__item">
@@ -101,7 +101,7 @@
         <div class="catalog__products">
             <div class="products__control">
                 <div class="control__action">
-                    <a href="#" class="btn btn--primary d-none-lg">Категории</a>
+                    <a href="#" class="btn btn--primary btn--d-none-lg">Категории</a>
                 </div>
                 <div class="control__sorting">
                     <!-- Пока не разобрался как правильно стилизовать select и стоит ли в этом случае его вообще использовать -->

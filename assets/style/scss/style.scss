@@ -1,25 +1,24 @@
+@import "mixins/container-mixin";
 @import "mixins/media-mixin";
-@import "mixins/typography/weight-fonts";
+@import "mixins/typography/buttons";
 @import "mixins/typography/headings";
 @import "mixins/typography/paragraphs";
-@import "mixins/typography/buttons";
+@import "mixins/typography/weight-fonts";
 
-@import "utils";
+@import "brand";
+@import "buttons";
+@import "catalog";
+@import "common";
+@import "content";
+@import "general-body";
+@import "general-header";
 @import "icons";
 @import "main-menu";
-@import "personal";
-@import "brand";
 @import "mobile-main-menu";
-@import "general";
 @import "page";
-@import "catalog";
-@import "buttons";
+@import "personal";
 @import "product";
-
-//этот блок здесь лишний, не надо делать свалку в общем файле
-.content {
-  padding-top: 16px;
-}
+@import "utils";
 
 :root {
   --primary-color: #000;
@@ -37,8 +36,7 @@
   --catalog-category-hover-border-color: #979797;
 }
 
-//лучше задать theme-inverse один класс и его применять к нужным тебе блокам
-.general-header--dark, .page-info--dark {
+.theme-inverse {
   --primary-color: #fff;
   --secondary-color: #979797;
   --container-bg-color: #E5E5E5;
