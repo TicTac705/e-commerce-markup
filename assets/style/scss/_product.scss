@@ -1,17 +1,7 @@
-@mixin font-size-card {
-  font-size: 17px;
-}
-
-//есть способ много лучше визуально, создаст сетку блоков которые хорошо скалируются, поиграйся с шириной
-//display: grid;
-//grid-template-columns: repeat(auto-fill, minmax(var(--layout-grid-min-width, 165px), 1fr));
-//gap: var(--layout-grid-gap, 12px);
-
 .products__list {
   padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--layout-product-list-min-width), 1fr));
   gap: 20px;
   box-sizing: border-box;
 }
@@ -19,7 +9,6 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  width: 264px; // неверно, блок вписывается в какие-то готовые размеры от родителя, по умолчанию он 100% ширины должен быть
   border: 1px solid var(--secondary-color);
 
   &__link {
@@ -27,27 +16,33 @@
   }
 
   &__img {
-    //пошло дублирование ширины, это плохо, картинка тоже должна быть width: 100%
-    width: 264px;
+    position: relative;
+    width: 100%;
 
-    // а квадратные картинки делаются иначе, это надо погуглить тебе
-    height: 264px;
+    &::after {
+      display: block;
+      content: '';
+      padding-bottom: 100%;
+    }
 
     .product-img {
-      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
   &__title {
-    @include bold;
-    @include font-size-card;
+    @include h-5;
     padding: 4px;
     text-align: center;
   }
 
   &__footer {
-    @include font-size-card;
+    @include p-5;
     padding: 4px;
     display: flex;
     justify-content: space-between;

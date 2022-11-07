@@ -35,9 +35,7 @@
   &__description {
     margin: 0;
     max-width: 45%;
-    font-size: 18px;
-    line-height: 26px;
-
+    @include p-5;
     @include mobile {
       display: none;
     }

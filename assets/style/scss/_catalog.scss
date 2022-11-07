@@ -1,7 +1,6 @@
 .catalog {
   display: flex;
   gap: 12px;
-  width: 100%; // это лишнее, флексы уже на всю ширину
   box-sizing: border-box;
 
   &__categories {
@@ -21,75 +20,11 @@
     margin: 0;
   }
 
-  &__category-list {}
-}
-
-//это отдельный файл, сейчас файл и так уже немаленький, любой блок в отдельном файле
-.category-list {
-  //нет, флексы здесь лишние, если их все отменить почти ничего не изменится, отступы и при гридах работают
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-size: 17px; // ты создал много миксинов, но всё равно продолжаешь делать новые размеры шрифтов по проекту, сделай поиск по font-size в проекте, их много, а должно быть по минимуму
-  gap: 4px;
-
-  &__item {}
-
-  &__link {
-    text-decoration: none;
-    display: flex;
-    padding: 4px;
-    color: var(--primary-color);
-    border: 1px solid var(--catalog-category-border-color);
-    gap: 4px;
-
-    .link__text {
-      display: block;
-      max-width: 180px; // это плохо, по сути flex: 1 1 auto уже растянется на всю доступную ширину, ты хардкодишь размер там где не нужно
-
-      //эти три строки обычно убирают в миксин @include elipsis
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .link__badge {
-      margin-left: auto;
-    }
-
-    &:hover,
-    &:focus {
-      color: var(--secondary-color);
-      border: 1px solid var(--catalog-category-hover-border-color);
-
-      //нагугли хороший миксин по работе с transition, а то приходится немного дублировать по проекту
-      transition-property: border, color;
-      transition-duration: 0.2s;
-      transition-timing-function: linear;
-    }
+  &__category-list {
   }
 }
 
 //элемент без блока, неверно
 .catalog__products {
   width: 100%; // это лишнее, блок уже занимает всё доступное пространство
-}
-
-// отдельный блок, который называется .controls или .actions-row или ещё как
-.products__control {
-  display: flex;
-  align-items: center;
-
-  .control {
-    &__action {
-      display: flex;
-      gap: 4px;
-    }
-
-    &__sorting {
-      margin-left: auto;
-    }
-  }
 }

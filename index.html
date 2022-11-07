@@ -18,17 +18,13 @@
 </head>
 <body class="general-body">
 <header class="general-header theme-inverse">
-<!--    идея таких утилитных классов плохо подходит для паблик проектов, такое норм в админке,-->
-<!--    потому что по сути теряется контекст стилизации, вёрстка через html классы не очень хорошо-->
-<!--    скалируется и происходит дублирование одних и тех же классов. Гораздо лучше-->
-<!--    было бы иметь эти же стили в general-header__content сейчас, а контейнер можно оформить миксином-->
     <nav class="general-header__container">
         <div class="general-header__common common">
             <div class="common__mobile-main-menu mobile-main-menu">
                 <i class="icon-bars"></i>
             </div>
             <a href="#" class="common__brand brand">E-Commerce</a>
-            <ul class="common__main-menu main-menu">
+            <ul class="common__main-menu menu main-menu">
                 <li class="main-menu__item">
                     <a href="#" class="main-menu__link">Каталог</a>
                 </li>
@@ -68,6 +64,12 @@
                 </li>
                 <li class="category-list__item">
                     <a href="#" class="category-list__link">
+                        <span class="link__text">Стиральные машины Стиральные машины</span>
+                        <span class="link__badge">0</span>
+                    </a>
+                </li>
+                <li class="category-list__item">
+                    <a href="#" class="category-list__link">
                         <span class="link__text">Смартфоны</span>
                         <span class="link__badge">12</span>
                     </a>
@@ -99,11 +101,11 @@
             </ul>
         </div>
         <div class="catalog__products">
-            <div class="products__control">
-                <div class="control__action">
+            <div class="controls">
+                <div class="controls__action">
                     <a href="#" class="btn btn--primary btn--d-none-lg">Категории</a>
                 </div>
-                <div class="control__sorting">
+                <div class="controls__sorting">
                     <!-- Пока не разобрался как правильно стилизовать select и стоит ли в этом случае его вообще использовать -->
                     <select>
                         <option>sort 1</option>

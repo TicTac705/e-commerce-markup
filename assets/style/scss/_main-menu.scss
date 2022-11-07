@@ -1,24 +1,26 @@
 .main-menu {
-  // я бы вынес отдельно блок .menu отсюда т.к. для ul приходится всегда одно и то же затирать
-  display: flex;
-  flex-wrap: wrap; // зачем?
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  font-size: 17px;
+  @include p-5;
   gap: 32px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
 
   &__link {
     text-decoration: none;
     color: var(--primary-color);
     border-bottom: 1px solid var(--main-menu-bg-color);
 
-    //красиво сделал, только :focus как по мне лишнее, корректнее --active сделать
-    &:hover, &:focus {
+    &:hover, &--active {
       color: var(--secondary-color);
       border-bottom: 1px solid var(--secondary-color);
       transition: border-bottom 0.3s linear;
     }
+  }
+
+  @include mobile {
+    display: none !important;
   }
 }
 

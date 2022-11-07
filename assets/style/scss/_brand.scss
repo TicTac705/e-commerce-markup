@@ -1,7 +1,7 @@
 .brand {
   font-style: normal;
-  @include bold;
-  font-size: 20px;
+  @include h-4;
+  font-weight: 700;
   text-decoration: none;
   color: var(--primary-color);
 

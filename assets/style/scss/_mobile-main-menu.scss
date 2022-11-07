@@ -1,5 +1,5 @@
 .mobile-main-menu {
-  @include bold;
-  font-size: 20px;
+  @include h-4;
+  font-weight: 700;
   color: var(--primary-color);
 }

@@ -1,13 +1,18 @@
 .common {
-    &__main-menu {
-        @include mobile {
-            display: none;
-        }
+  &__main-menu {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__mobile-main-menu {
+    @include mobile {
+      display: flex;
+      align-items: center;
     }
 
-    &__mobile-main-menu {
-        @include desktop {
-            display: none;
-        }
+    @include desktop {
+      display: none;
     }
+  }
 }

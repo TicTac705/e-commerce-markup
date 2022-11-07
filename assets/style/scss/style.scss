@@ -3,22 +3,23 @@
 @import "mixins/typography/buttons";
 @import "mixins/typography/headings";
 @import "mixins/typography/paragraphs";
-@import "mixins/typography/weight-fonts";
 
 @import "brand";
 @import "buttons";
 @import "catalog";
+@import "category-list";
 @import "common";
 @import "content";
+@import "controls";
 @import "general-body";
 @import "general-header";
 @import "icons";
 @import "main-menu";
+@import "menu";
 @import "mobile-main-menu";
 @import "page";
 @import "personal";
 @import "product";
-@import "utils";
 
 :root {
   --primary-color: #000;
@@ -34,6 +35,8 @@
 
   --catalog-category-border-color: #000;
   --catalog-category-hover-border-color: #979797;
+
+  --layout-product-list-min-width: 264px;
 }
 
 .theme-inverse {
